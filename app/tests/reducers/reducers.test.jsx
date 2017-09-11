@@ -16,12 +16,12 @@ describe('Reducers', () => {
     });
   });
 
-  describe('showCompleteReducer', () => {
-    it('should toggle showComleted', () => {
+  describe('showCompletedReducer', () => {
+    it('should toggle showCompleted', () => {
       var action = {
         type: 'TOGGLE_SHOW_COMPLETED'
       };
-      var res = reducers.showCompleteReducer(df(false), df(action));
+      var res = reducers.showCompletedReducer(df(false), df(action));
 
       expect(res).toEqual(true);
     });
@@ -55,6 +55,24 @@ describe('Reducers', () => {
 
       expect(res[0].completed).toEqual(false);
       expect(res[0].completedAt).toEqual(undefined);
+    });
+
+    it('should add existing todos', () => {
+      var todos = [{
+        id: '111',
+        text: 'anything',
+        completed: false,
+        completedAt: undefined,
+        createdAt: 33000
+      }];
+      var action = {
+        type: 'ADD_TODOS',
+        todos
+      };
+      var res = reducers.todosReducer(df([]), df(action));
+
+      expect(res.length).toEqual(1);
+      expect(res[0]).toEqual(todos[0]);
     });
   });
 });
