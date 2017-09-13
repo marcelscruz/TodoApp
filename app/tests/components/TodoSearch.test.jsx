@@ -1,13 +1,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var expect = require('expect');
-var $ = require('jQuery');
 var TestUtils = require('react-addons-test-utils');
+var expect = require('expect');
+var $ = require('jquery');
 
-import { TodoSearch } from 'TodoSearch';
+import {TodoSearch} from 'TodoSearch';
 
 describe('TodoSearch', () => {
-
   it('should exist', () => {
     expect(TodoSearch).toExist();
   });
@@ -39,5 +38,4 @@ describe('TodoSearch', () => {
 
     expect(spy).toHaveBeenCalledWith(action);
   });
-
 });

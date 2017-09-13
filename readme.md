@@ -1,1 +1,1 @@
-TodoApp created on React, Redux and Firebase
+Boilerplate React App

@@ -1,13 +1,11 @@
-@import 'base/variables';
+@import "base/variables";
 
-// Foundation
-@import 'base/foundation-settings';
-@import 'foundation';
+// foundation
+@import "base/foundation-settings";
+@import "foundation";
 @include foundation-everything;
 
 // Components
-@import 'components/callout-auth';
-@import 'components/container';
-@import 'components/page-actions';
-@import 'components/page-title';
-@import 'components/todo';
+@import "components/container";
+@import "components/page-title";
+@import "components/todo";
