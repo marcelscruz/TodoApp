@@ -1,6 +1,6 @@
-# Todo
+# To-do
 
-A todo web app created with React.
+A to-do web app created with React.
 
 ## Project
 
@@ -11,7 +11,7 @@ This web app was created based on Andrew Mead's React course.
 Clone repository
 
 ```
-git clone https://github.com/marcelscruz/react-todo.git
+git clone https://github.com/marcelscruz/react-to-do.git
 ```
 
 Install dependencies
